@@ -1,0 +1,120 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #fff !important;
+  overflow-x: hidden;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-size: 1em;
+  padding: 5px 15px;
+  color: #000;
+  box-shadow: 1px 1px 1px #0000005e;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.admin-header {
+  position: fixed;
+  top: 0;
+  left: 240px; /* sidebar width */
+  right: 0;
+  height: 70px;
+
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+
+  z-index: 5; /* ⬅ sidebar ထက်နိမ့် */
+}
+
+
+/* Title */
+.header-title {
+  font-size: 26px;
+  font-weight: 600;
+  color: #111827;
+}
+
+/* Search box */
+.header-search input {
+  width: 260px;
+  height: 38px;
+  padding: 0 16px;
+
+  border-radius: 20px;
+  border: none;
+  outline: none;
+
+  background: #f3f4f6;
+  font-size: 14px;
+}
+
+.admin-sidebar {
+  position: fixed;
+  top: 70px; /* header height */
+  left: 0;
+  width: 240px;
+  height: calc(100vh - 70px);
+
+  background: #ffffff;
+  border-right: 1px solid #e5e7eb;
+
+  padding: 20px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  z-index: 20; /* ⬅ header ထက်မြင့် */
+}
+
+
+/* Sidebar item */
+.sidebar-item {
+   position: relative;
+  z-index: 21; /* ensure clickable */
+
+  display: flex;
+  align-items: center;
+
+  height: 45px;
+  padding: 0 16px;
+  border-radius: 10px;
+
+  color: #111827;
+  font-weight: 500;
+  text-decoration: none;
+
+  transition: 0.2s;
+}
+
+/* Hover */
+.sidebar-item:hover {
+  background: #f3f4f6;
+}
+
+/* Active (yellow like image) */
+.sidebar-item.active {
+  background: #facc15;
+  font-weight: 600;
+}
+
