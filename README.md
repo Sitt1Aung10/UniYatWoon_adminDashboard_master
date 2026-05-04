@@ -9,11 +9,10 @@ A full-stack **University Admin Dashboard** built with **PHP (backend)** and **R
 ### 👥 User Management
 
 * View all registered users
-* Users are categorized into:
-
-  * **طلاب (Students)** – with Student ID
-  * **Teachers**
-* Search and filter users بسهولة
+* Users are categorized into
+* (Students) – with Student ID
+* Teachers
+* Search and filter users
 * View detailed user profiles
 
 ### 🆔 Student ID Tracking
